@@ -1,16 +1,16 @@
 {
-  "name": "fartscroll.js",
-  "main": "fartscroll.js",
+  "name": "fartclick.js",
+  "main": "fartclick.js",
   "version": "0.1.0",
-  "homepage": "http://theonion.github.io/fartscroll.js/",
+  "homepage": "https://github.com/mmunhall/fartclick.js",
   "authors": [
     "Chris Sinchok <csinchok@theonion.com>"
   ],
-  "description": "You want fart noises as you scroll? We've got you covered.",
+  "description": "You want fart noises as you click? We've got you covered.",
   "keywords": [
     "fart",
     "farts",
-    "scroll",
+    "click",
     "poop",
     "butts",
     "flatus"
