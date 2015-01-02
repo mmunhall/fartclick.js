@@ -12,7 +12,7 @@ _Now with 100% less jQuery! (Sorry, jQuery, we still love you)_
 ```javascript
 fartclick(); // farts every click
 
-fartclick(1); // save as above
+fartclick(1); // same as above
 
 fartclick(3); // farts every 3 clicks
 
