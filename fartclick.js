@@ -3,7 +3,10 @@
 var fartclick = (function () {
     "use strict";
 
-    var mp3, ogg;
+    var mp3,
+        ogg,
+        clickInterval,
+        clickCount = 0;
 
     mp3 = {
         prefix: "data:audio/mp3;base64,",
@@ -80,12 +83,18 @@ var fartclick = (function () {
             audio = getAudioFor(player),
             rand = Math.floor(Math.random() * audio.sound.length);
 
-        player.src = audio.prefix + audio.sound[rand];
-        player.play();
+        clickCount++;
+
+        if (clickCount % clickInterval === 0) {
+            player.src = audio.prefix + audio.sound[rand];
+            player.play();
+        }
     }
 
-    return function () {
-        var clickFart = function() {
+    return function (interval) {
+        clickInterval = interval || 1;
+
+        var clickFart = function () {
             playAudio();
         };
 

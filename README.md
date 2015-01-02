@@ -10,5 +10,11 @@ _Now with 100% less jQuery! (Sorry, jQuery, we still love you)_
 2. Initialize the fartclick plugin once the DOM has loaded:
 
 ```javascript
-fartclick();
+fartclick(); // farts every click
+
+fartclick(1); // save as above
+
+fartclick(3); // farts every 3 clicks
+
+fartclick(35); // farts every 35 clicks
 ```
